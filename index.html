@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WHOVOTE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/canvasjs.min.js"></script>
+
+
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+ 
+	
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                  
+                   "#CC3333",
+                "#FFCC00",
+                "#08A3D9",
+                 "#006633",
+                "#3399CC",
+                  
+                ]);
+                
+    var chart = new CanvasJS.Chart("bub",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "후보별 법안발의 수"    
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {        
+        type: "column",  
+        showInLegend: true, 
+        legendMarkerColor: "grey",
+legendText: "후보별 법안 수",        
+        dataPoints: [     
+           
+        
+        
+        {y: 241,  label: "홍준표"},
+        {y: 102, label: "심상정"},
+        {y: 35,  label: "유승민" },   
+        {y: 30,  label: "안철수"},
+        {y: 4,  label: "문재인"},
+     
+        ]
+      }   
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                   "#006633",
+                   "#CC3333",
+                "#FFCC00",
+                "#3399CC",
+                  "#08A3D9",
+                ]);
+                
+    var chart = new CanvasJS.Chart("culsuc",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "국회 본회의 출석률"    
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {        
+        type: "column",  
+        showInLegend: true, 
+        legendMarkerColor: "grey",
+legendText: "국회 본회의 출석률",        
+        dataPoints: [     
+           {y: 91,  label: "안철수"},
+        
+        
+        {y: 87,  label: "홍준표"},
+        {y: 76, label: "심상정"},
+        {y: 74,  label: "문재인"},
+        {y: 72,  label: "유승민" },
+        ]
+      }   
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                   "#006633",
+                  "#08A3D9",
+                   "#CC3333",
+                
+                "#3399CC",
+                "#FFCC00",  
+                ]);
+                
+    var chart = new CanvasJS.Chart("jaesan",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "대선 후보별 재산 (직계존속 포함)"    
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {        
+        type: "column",  
+        showInLegend: true, 
+        legendMarkerColor: "grey",
+legendText: "대선 후보별 재산  (단위 : 천원)",        
+        dataPoints: [     
+           {y: 119690103,  label: "안철수"},
+        
+         {y: 4836121,  label: "유승민" },
+        {y: 2555543,  label: "홍준표"},
+        
+        {y: 1864026,  label: "문재인"},
+       {y: 350737, label: "심상정"},
+        ]
+      }   
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+<link rel="shortcut icon" href="http://whovote-bestkdh.c9users.io/index.html/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://whovote-bestkdh.c9users.io/index.html/favicon.ico" type="image/x-icon" />
+
+
+
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="container">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/vote.png" alt="" /></span><span class="title"><h1>WHOVOTE</h1>
+								</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+						<div class="container" id="hubo">
+							
+								<h1>후보별 비교 - <a href="#jungbo">정보별 비교로 가기</a></h1>
+								<p>후보별로 나눠서 정보를 보여주는 페이지 입니다.</p>
+							<section class="tiles">
+					
+								<article class>
+									<span class="image">
+										<img src="http://i.huffpost.com/gen/5244510/original.jpg" alt="" />
+									</span>
+									<a href="moon.html">
+										<h2>문재인</h2>
+										<div class="content">
+											<p></p>
+										</div>
+									</a>
+								</article>
+
+								
+								<article class>
+									<span class="image">
+										<!--<img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Finfo.nec.go.kr%2Fphoto_20170509%2FSd1%2FSgg10000000%2FHb100121058%2Fgicho%2F100121058.JPG" alt="" />-->
+										<img src="http://i.huffpost.com/gen/5244512/original.jpg" alt="" />
+									</span>
+									<a href="hong.html">
+										<h2>홍준표</h2>
+										<div class="content">
+											<p></p>
+										</div>
+									</a>
+								</article>
+
+								
+								
+								
+								<article class>
+									<span class="image">
+										<img src="http://i.huffpost.com/gen/5244516/original.jpg" alt="" />
+									</span>
+									<a href="an.html">
+										<h2>안철수</h2>
+										<div class="content">
+											<p></p>
+										</div>
+									</a>
+								</article>
+
+								
+								
+								
+								
+								<article class>
+									<span class="image">
+										<img src="http://i.huffpost.com/gen/5244518/original.jpg" alt="" />
+									</span>
+									<a href="you.html">
+										<h2>유승민</h2>
+										<div class="content">
+											<p></p>
+										</div>
+									</a>
+								</article>
+						
+									
+								
+								<article class>
+									<span class="image">
+										<img src="http://i.huffpost.com/gen/5244522/original.jpg" alt="" />
+									</span>
+									<a href="sim.html">
+										<h2>심상정</h2>
+										<div class="content">
+											<p></p>
+										</div>
+									</a>
+								</article>
+
+								
+					
+	<br><br>		<br><br><br><br><br><br>						
+					<div class="container" id="jungbo">
+						<h1>항목별 정보 - <a href="#hubo">후보별 비교로 가기</a></h1>
+								<p>항목별로 나눠진 페이지입니다.</p>
+								
+								<!-- 세월호-->
+<br><br><br>
+
+
+  <img src="http://d2kl0xuacqn1kv.cloudfront.net/2017/04/13190734/2017041302_021.jpg" class="img-responsive center-block" alt=""  />
+ <br><br><br>
+
+    <!-- 출석률-->
+				<div id="culsuc" style="height: 300px; width: 100%;"></div>
+	<br><br><br>	
+    	
+	<!-- 입법발의률-->				
+            	 <div id="bub" style="height: 300px; width: 100%;"></div>  
+    	<br><br><br>	
+    		
+   
+  <!-- 재산-->
+  <div id="jaesan" style="height: 300px; width: 100%;"></div>
+ <br><br> 
+ <br> 
+
+<div class="embed-responsive embed-responsive-16by9">
+		<iframe width="854" height="480" src="https://www.youtube.com/embed/rJ1INwFKQGU" frameborder="0" allowfullscreen></iframe>
+    </div>						
+				<br><br>		
+				
+				
+				
+<div class="embed-responsive embed-responsive-16by9">
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/g8eKVxxwpI0" frameborder="0" allowfullscreen></iframe>
+    </div>						
+
+	<br><br>		
+
+ <div class="embed-responsive embed-responsive-16by9">
+   
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/Qpkk-F9oL20" frameborder="0" allowfullscreen></iframe>
+
+    </div>						
+
+								
+				
+
+					
+									</a>
+								</article>
+					</section>	
+							
+						
+						
+					</div>
+					
+					
+					
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
