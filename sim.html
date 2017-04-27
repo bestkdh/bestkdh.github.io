@@ -89,7 +89,7 @@
 							
 							
 							
-							window.onload = function () {
+							$(document).ready( function () {
 								var chart = new CanvasJS.Chart("chartContainer1",
 								{
 									title:{
@@ -123,7 +123,8 @@
 									]
 								});
 								chart.render();
-							}
+							});
+							
 						</script>
 	</head>
 	<body>
@@ -306,8 +307,22 @@
 							      </h4>
 							    </div>
 							    <div id="collapse1" class="panel-collapse collapse">
-							      <table summary="이표는 의안명,의안번호,제안일자,소관부처,현황 으로 구분되어 있습니다." class="tbl_typeA">
-                        <caption></caption>
+							      <table id="products" summary="이표는 의안명,의안번호,제안일자,소관부처,현황 으로 구분되어 있습니다." class="tbl_typeA">
+
+
+
+<caption>
+                            <form action="" id="setRows">
+                                <p>
+                                        <input type="text" name="rowPerPage" value="6">
+                                </p>
+                            </form>
+                    
+                        </caption>
+
+
+
+
                         <colgroup>
                             <!-- <col width="8%"> -->
                             <col width="*">
@@ -8539,7 +8554,7 @@
 <p>존경하는 국민여러분,</p>
 <p>작년 크리스마스 이브, 창원에서 열린 촛불집회에 스물 넷 청년이 무대에 올랐습니다. 그리고 간절히 물었습니다. “박근혜가 퇴진하면 내 삶이 나아질까요?”</p>
 <p>회사 생활한지 4년이 되었지만 월급은 최저임금에 고정돼 있다고 했습니다. 세금 떼고 120 만원 받아 이것저것 떼이고 나면 10만원도 채 남지 않는다고 했습니다. 좋아하는 사람이 있지만 결혼은 꿈도 못 꾼다고 했습니다. 미래만 생각하면 가슴 한 귀퉁이에서 슬픈 감정이 올라온다고 말했습니다.</p>
-<p>자신이 사는 얘기를 담담히 말하던 청년은 서러움으로 꽁꽁 싸맨 한 마디를 내뱉습니다. “저는 이대로 20년, 30년 살라고 하면 못 살 것 같습니다.” 끝날 기미도 없이 이어지는 고단한 삶에 절망하면서도, 선배 노동자들이 투쟁으로 따낸 최저임금에 감사하는 착한 청년이었습니다.</p>
+<p>자신이 사는 얘기를 담담히 말하던 청년은 서러움으로 꽁꽁 싸맨 한 마디를 내뱉습니다. “저는 이대로 20년, 30년 살라��� 하면 못 살 것 같습니다.” 끝날 기미도 없이 이어지는 고단한 삶에 절망하면서도, 선배 노동자들이 투쟁으로 따낸 최저임금에 감사하는 착한 청년이었습니다.</p>
 <p>그 영상을 보며 울었습니다. 그가 역사책에서 배운 87년 노동자 대투쟁의 성과는 ‘최저임금’만이 아니었습니다. 노동자들의 국회의원도 있었습니다. 바로 접니다. 참 미안하고 부끄러웠습니다.</p>
 <p>30년 전, 구로공단으로 향하던 마음을 다시 새깁니다. 그때처럼 두렵고 떨리지만, 그 때처럼 이 길이라는 확신이 있습니다.</p>
 <p>평범한 그 청년의 소박한 꿈,‘열심히 일하면, 일한만큼 대가를 받는 행복한 사회’를 만들기 위해 정의당 19대 대선후보 경선에 참여하고자 합니다.</p>
@@ -8878,6 +8893,98 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+
+
+
+	
+<script>
+							    
+                                var $setRows = $('#setRows');
+                                $("#setRows").hide();    
+                                    $setRows.submit(function (e) {
+                                        e.preventDefault();
+                                        var rowPerPage = $('[name="rowPerPage"]').val() * 1;// 1 을  곱하여 문자열을 숫자형로 변환
+                                        
+                                    //      console.log(typeof rowPerPage);
+                                    
+                                        var zeroWarning = 'Sorry, but we cat\'t display "0" rows page. + \nPlease try again.'
+                                        if (!rowPerPage) {
+                                            alert(zeroWarning);
+                                            return;
+                                        }
+                                        $('#nav').remove();
+                                        var $products = $('#products');
+                                    
+                                        //$products.after('<div id="nav">');
+                                        $products.after('<ul class="pagination">');
+                                    
+                                    
+                                        var $tr = $($products).find('tbody tr');
+                                        var rowTotals = $tr.length;
+                                    //  console.log(rowTotals);
+                                    
+                                        var pageTotal = Math.ceil(rowTotals/ rowPerPage);
+                                        var i = 0;
+                                    
+                                        for (; i < pageTotal; i++) {
+                                            $('<a href="#"></a>')
+                                                    .attr('rel', i)
+                                                    .html(i + 1)
+                                                    .appendTo('.pagination')
+                                                    .wrap( "<li></li>>");
+                                        }
+                                    
+                                        $tr.addClass('off-screen')
+                                                .slice(0, rowPerPage)
+                                                .removeClass('off-screen');
+                                    
+                                        var $pagingLink = $('.pagination a');
+                                        $pagingLink.on('click', function (evt) {
+                                            evt.preventDefault();
+                                            var $this = $(this);
+                                            if ($this.hasClass('active')) {
+                                                return;
+                                            }
+                                            $pagingLink.removeClass('active');
+                                            $this.addClass('active');
+                                    
+                                            // 0 => 0(0*4), 4(0*4+4)
+                                            // 1 => 4(1*4), 8(1*4+4)
+                                            // 2 => 8(2*4), 12(2*4+4)
+                                            // 시작 행 = 페이지 번호 * 페이지당 행수
+                                            // 끝 행 = 시작 행 + 페이지당 행수
+                                    
+                                            var currPage = $this.attr('rel');
+                                            var startItem = currPage * rowPerPage;
+                                            var endItem = startItem + rowPerPage;
+                                    
+                                            $tr.css('opacity', '0.0')
+                                                    .addClass('off-screen')
+                                                    .slice(startItem, endItem)
+                                                    .removeClass('off-screen')
+                                                    .animate({opacity: 1}, 300);
+                                    
+                                        });
+                                    
+                                        $pagingLink.filter(':first').addClass('active');
+                                    
+                                    });
+                                    
+                                    
+                                    $setRows.submit();							    
+                                    							    
+                                    							    
+							    
+							</script>
+			
+
+
+
+
+
+
+
 
 	</body>
 </html>

@@ -257,8 +257,22 @@ KAIST 기술경영전문대학원 정문술석좌교수</br>
 							      </h4>
 							    </div>
 							    <div id="collapse1" class="panel-collapse collapse">
-							      <table summary="이표는 의안명,의안번호,제안일자,소관부처,현황 으로 구분되어 있습니다." class="tbl_typeA">
-                        <caption></caption>
+							      <table id="products" summary="이표는 의안명,의안번호,제안일자,소관부처,현황 으로 구분되어 있습니다." class="tbl_typeA">
+                        
+                        
+                        
+                        <caption>
+                            <form action="" id="setRows">
+                                <p>
+                                        <input type="text" name="rowPerPage" value="6">
+                                </p>
+                            </form>
+                    
+                        </caption>
+                        
+                        
+                        
+                        
                         <colgroup>
                             <!-- <col width="8%"> -->
                             <col width="*">
@@ -1335,7 +1349,7 @@ KAIST 기술경영전문대학원 정문술석좌교수</br>
                                            
                                        
                                     </td>
-                                    <!-- 검토 추진현황(추진일자) 정사무관 삭제요척-->
+                                    <!-- 검토 추진현황(추진일자) 정사무��� 삭제요척-->
 <!--                                     <td> -->
 
 
@@ -2894,6 +2908,97 @@ KAIST 기술경영전문대학원 정문술석좌교수</br>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+
+
+
+
+	
+<script>
+							    
+                                var $setRows = $('#setRows');
+                                $("#setRows").hide();    
+                                    $setRows.submit(function (e) {
+                                        e.preventDefault();
+                                        var rowPerPage = $('[name="rowPerPage"]').val() * 1;// 1 을  곱하여 문자열을 숫자형로 변환
+                                        
+                                    //      console.log(typeof rowPerPage);
+                                    
+                                        var zeroWarning = 'Sorry, but we cat\'t display "0" rows page. + \nPlease try again.'
+                                        if (!rowPerPage) {
+                                            alert(zeroWarning);
+                                            return;
+                                        }
+                                        $('#nav').remove();
+                                        var $products = $('#products');
+                                    
+                                        //$products.after('<div id="nav">');
+                                        $products.after('<ul class="pagination">');
+                                    
+                                    
+                                        var $tr = $($products).find('tbody tr');
+                                        var rowTotals = $tr.length;
+                                    //  console.log(rowTotals);
+                                    
+                                        var pageTotal = Math.ceil(rowTotals/ rowPerPage);
+                                        var i = 0;
+                                    
+                                        for (; i < pageTotal; i++) {
+                                            $('<a href="#"></a>')
+                                                    .attr('rel', i)
+                                                    .html(i + 1)
+                                                    .appendTo('.pagination')
+                                                    .wrap( "<li></li>>");
+                                        }
+                                    
+                                        $tr.addClass('off-screen')
+                                                .slice(0, rowPerPage)
+                                                .removeClass('off-screen');
+                                    
+                                        var $pagingLink = $('.pagination a');
+                                        $pagingLink.on('click', function (evt) {
+                                            evt.preventDefault();
+                                            var $this = $(this);
+                                            if ($this.hasClass('active')) {
+                                                return;
+                                            }
+                                            $pagingLink.removeClass('active');
+                                            $this.addClass('active');
+                                    
+                                            // 0 => 0(0*4), 4(0*4+4)
+                                            // 1 => 4(1*4), 8(1*4+4)
+                                            // 2 => 8(2*4), 12(2*4+4)
+                                            // 시작 행 = 페이지 번호 * 페이지당 행수
+                                            // 끝 행 = 시작 행 + 페이지당 행수
+                                    
+                                            var currPage = $this.attr('rel');
+                                            var startItem = currPage * rowPerPage;
+                                            var endItem = startItem + rowPerPage;
+                                    
+                                            $tr.css('opacity', '0.0')
+                                                    .addClass('off-screen')
+                                                    .slice(startItem, endItem)
+                                                    .removeClass('off-screen')
+                                                    .animate({opacity: 1}, 300);
+                                    
+                                        });
+                                    
+                                        $pagingLink.filter(':first').addClass('active');
+                                    
+                                    });
+                                    
+                                    
+                                    $setRows.submit();							    
+                                    							    
+                                    							    
+							    
+							</script>
+			
+
+
+
+
+
 
 	</body>
 </html>
