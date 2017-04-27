@@ -14,7 +14,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		
+
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,27 +25,27 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
- 
-	
+
+
 
 
   <script type="text/javascript">
   $(document).ready( function () { CanvasJS.addColorSet("greenShades",
                 [//colorSet Array
-                  
+
                    "#CC3333",
                 "#FFCC00",
                 "#08A3D9",
                  "#006633",
                 "#3399CC",
-                  
+
                 ]);
-                
+
     var chart = new CanvasJS.Chart("bub",
     {
         colorSet: "greenShades",
       title:{
-        text: "후보별 법안발의 수"    
+        text: "후보별 법안발의 수"
       },
       animationEnabled: true,
       axisY: {
@@ -59,23 +59,23 @@
       data: [
 
 
-      {        
-        type: "column",  
-        showInLegend: true, 
+      {
+        type: "column",
+        showInLegend: true,
         legendMarkerColor: "grey",
-legendText: "후보별 법안 수",        
-        dataPoints: [     
-           
-        
-        
+legendText: "후보별 법안 수",
+        dataPoints: [
+
+
+
         {y: 241,  label: "홍준표"},
         {y: 102, label: "심상정"},
-        {y: 35,  label: "유승민" },   
+        {y: 35,  label: "유승민" },
         {y: 30,  label: "안철수"},
         {y: 4,  label: "문재인"},
-     
+
         ]
-      }   
+      }
       ]
     });
 
@@ -93,12 +93,12 @@ legendText: "후보별 법안 수",
                 "#3399CC",
                   "#08A3D9",
                 ]);
-                
+
     var chart = new CanvasJS.Chart("culsuc",
     {
         colorSet: "greenShades",
       title:{
-        text: "국회 본회의 출석률"    
+        text: "국회 본회의 출석률"
       },
       animationEnabled: true,
       axisY: {
@@ -112,21 +112,21 @@ legendText: "후보별 법안 수",
       data: [
 
 
-      {        
-        type: "column",  
-        showInLegend: true, 
+      {
+        type: "column",
+        showInLegend: true,
         legendMarkerColor: "grey",
-legendText: "국회 본회의 출석률",        
-        dataPoints: [     
+legendText: "국회 본회의 출석률",
+        dataPoints: [
            {y: 91,  label: "안철수"},
-        
-        
+
+
         {y: 87,  label: "홍준표"},
         {y: 76, label: "심상정"},
         {y: 74,  label: "문재인"},
         {y: 72,  label: "유승민" },
         ]
-      }   
+      }
       ]
     });
 
@@ -142,16 +142,16 @@ legendText: "국회 본회의 출석률",
                    "#006633",
                   "#08A3D9",
                    "#CC3333",
-                
+
                 "#3399CC",
-                "#FFCC00",  
+                "#FFCC00",
                 ]);
-                
+
     var chart = new CanvasJS.Chart("jaesan",
     {
         colorSet: "greenShades",
       title:{
-        text: "대선 후보별 재산 (직계존속 포함)"    
+        text: "대선 후보별 재산 (직계존속 포함)"
       },
       animationEnabled: true,
       axisY: {
@@ -164,21 +164,21 @@ legendText: "국회 본회의 출석률",
       theme: "theme2",
       data: [
 
-      {        
-        type: "column",  
-        showInLegend: true, 
+      {
+        type: "column",
+        showInLegend: true,
         legendMarkerColor: "grey",
-legendText: "대선 후보별 재산  (단위 : 천원)",        
-        dataPoints: [     
+legendText: "대선 후보별 재산  (단위 : 천원)",
+        dataPoints: [
            {y: 119690103,  label: "안철수"},
-        
+
          {y: 4836121,  label: "유승민" },
         {y: 2555543,  label: "홍준표"},
-        
+
         {y: 1864026,  label: "문재인"},
        {y: 350737, label: "심상정"},
         ]
-      }   
+      }
       ]
     });
 
@@ -228,94 +228,94 @@ legendText: "대선 후보별 재산  (단위 : 천원)",
 							<li><a href="you.html">유승민</a></li>
 							<li><a href="sim.html">심상정</a></li>
 							<li><a href="#jungbo">후보자 비교</a></li>
-						</ul> 
+						</ul>
 					</nav>
 
 				<!-- Main -->
 						<div class="container" id="hubo">
-							
+
 								<h1>후보별 비교 - <a href="#jungbo">후보자 비교로 가기</a></h1>
 								<p>후보자 별로 화면 클릭시 자세히 볼수있습니다.</p>
 							<section class="tiles">
-					
+
 								<article class>
 									<span class="image">
 										<img src="images/ms.jpg" alt="" />
 									</span>
 									<a href="moon.html">
-										<h2>문재인<br>Click</h2>
+										<h2>Click</h2>
 										<div class="content">
 											<p></p>
 										</div>
 									</a>
 								</article>
 
-								
+
 								<article class>
 									<span class="image">
 										<!--<img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Finfo.nec.go.kr%2Fphoto_20170509%2FSd1%2FSgg10000000%2FHb100121058%2Fgicho%2F100121058.JPG" alt="" />-->
 										<img src="images/hs.jpg" alt="" />
 									</span>
 									<a href="hong.html">
-										<h2>홍준표<br>Click</h2>
+										<h2>Click</h2>
 										<div class="content">
 											<p></p>
 										</div>
 									</a>
 								</article>
 
-								
-								
-								
+
+
+
 								<article class>
 									<span class="image">
 										<img src="images/as.jpg" alt="" />
 									</span>
 									<a href="an.html">
-										<h2>안철수<br>Click</h2>
+										<h2>Click</h2>
 										<div class="content">
 											<p></p>
 										</div>
 									</a>
 								</article>
 
-								
-								
-								
-								
+
+
+
+
 								<article class>
 									<span class="image">
 										<img src="images/us.jpg" alt="" />
 									</span>
 									<a href="you.html">
-										<h2>유승민<br>Click</h2>
-										<div class="content">
-											<p></p>
-										</div>
-									</a>
-								</article>
-						
-									
-								
-								<article class>
-									<span class="image">
-										<img src="images/ss.jpg" alt="" />
-									</span>
-									<a href="sim.html">
-										<h2>심상정<br>Click</h2>
+										<h2>Click</h2>
 										<div class="content">
 											<p></p>
 										</div>
 									</a>
 								</article>
 
-								
-					
-	<br><br>		<br><br><br><br><br><br>						
+
+
+								<article class>
+									<span class="image">
+										<img src="images/ss.jpg" alt="" />
+									</span>
+									<a href="sim.html">
+										<h2>Click</h2>
+										<div class="content">
+											<p></p>
+										</div>
+									</a>
+								</article>
+
+
+
+	<br><br>		<br><br><br><br><br><br>
 					<div class="container" id="jungbo">
 						<h1>후보자 비교 - <a href="#hubo">후보별 비교로 가기</a></h1>
 								<p>항목별로 나눠진 페이지입니다.</p>
-								
+
 								<!-- 세월호-->
 <br><br><br>
 
@@ -325,91 +325,91 @@ legendText: "대선 후보별 재산  (단위 : 천원)",
 
     <!-- 출석률-->
 				<div id="culsuc" style="height: 300px; width: 100%;"></div>
-	<br><br><br>	
-    	
-	<!-- 입법발의률-->				
-            	 <div id="bub" style="height: 300px; width: 100%;"></div>  
-    	<br><br><br>	
-    		
-   
+	<br><br><br>
+
+	<!-- 입법발의률-->
+            	 <div id="bub" style="height: 300px; width: 100%;"></div>
+    	<br><br><br>
+
+
   <!-- 재산-->
   <div id="jaesan" style="height: 300px; width: 100%;"></div>
  <!-- 1차 -->
- <br><br> 
- <br> 
+ <br><br>
+ <br>
 
 <div class="embed-responsive embed-responsive-16by9">
 		<iframe width="854" height="480" src="https://www.youtube.com/embed/rJ1INwFKQGU" frameborder="0" allowfullscreen></iframe>
-    </div>						
+    </div>
 <!--2차 -->
-				<br><br>		
-				
-				
-				
+				<br><br>
+
+
+
 <div class="embed-responsive embed-responsive-16by9">
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/g8eKVxxwpI0" frameborder="0" allowfullscreen></iframe>
-    </div>						
+    </div>
 <!--3차 -->
-	<br><br>		
+	<br><br>
 
  <div class="embed-responsive embed-responsive-16by9">
-   
+
     <iframe width="854" height="480" src="https://www.youtube.com/embed/Qpkk-F9oL20" frameborder="0" allowfullscreen></iframe>
 
-    </div>						
+    </div>
 
 <!--4-1차 -->
-	<br><br>		
+	<br><br>
 
  <div class="embed-responsive embed-responsive-16by9">
-   
+
 <iframe width="854" height="480" src="https://www.youtube.com/embed/Qm5qt-Sx5dw" frameborder="0" allowfullscreen></iframe>
 
-    </div>						
+    </div>
 
 
 <!--4-2차 -->
-	<br><br>		
+	<br><br>
 
  <div class="embed-responsive embed-responsive-16by9">
-   
+
 <iframe width="854" height="480" src="https://www.youtube.com/embed/vo7BRDrZUBs" frameborder="0" allowfullscreen></iframe>
 
-    </div>						
-								
+    </div>
 
 
 
-				
 
-					
+
+
+
 									</a>
 								</article>
-					</section>	
-							
-						
-						
+					</section>
+
+
+
 					</div>
-					
-					
-					
+
+
+
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								
-							
-								
+
+
+
 							</section>
 							<section>
 								<h2>feedback</h2>
 								<ul class="icons">
-								
+
 									<br>
 									<li><a href="https://www.facebook.com/profile.php?id=100012278222897" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 							           <br>
-							           <li>heramrs@naver.com</li>		
+							           <li>heramrs@naver.com</li>
 								</ul>
 							</section>
 						</div>
