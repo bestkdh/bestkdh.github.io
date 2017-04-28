@@ -33,9 +33,10 @@
   $(document).ready( function () { CanvasJS.addColorSet("greenShades",
                 [//colorSet Array
 
-                   "#CC3333",
+                  
                 "#FFCC00",
                 "#08A3D9",
+                 "#CC3333",
                  "#006633",
                 "#3399CC",
 
@@ -45,7 +46,7 @@
     {
         colorSet: "greenShades",
       title:{
-        text: "후보별 법안발의 수"
+        text: "후보별 대표 발의 법안 수"
       },
       animationEnabled: true,
       axisY: {
@@ -63,15 +64,16 @@
         type: "column",
         showInLegend: true,
         legendMarkerColor: "grey",
-legendText: "후보별 법안 수",
+legendText: "후보별 대표 발의 법안 수",
         dataPoints: [
 
 
 
-        {y: 241,  label: "홍준표"},
-        {y: 102, label: "심상정"},
-        {y: 35,  label: "유승민" },
-        {y: 30,  label: "안철수"},
+       
+        {y: 106, label: "심상정"},
+        {y: 36,  label: "유승민" },
+        {y: 25,  label: "홍준표"},
+        {y: 23,  label: "안철수"},
         {y: 4,  label: "문재인"},
 
         ]
@@ -135,6 +137,179 @@ legendText: "국회 본회의 출석률",
   </script>
 
 
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#3399CC",
+                  "#08A3D9",
+       
+                "#FFCC00",
+                   "#006633",
+     
+                ]);
+
+    var chart = new CanvasJS.Chart("sicdae",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "19대 국회 정치자금 사용내역 - 식대 합산 비용"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "19대 국회 정치자금 사용내역 - 식대 합산 비용",
+        dataPoints: [
+        {y: 93404077,  label: "문재인"},
+           
+     {y: 71894439,  label: "유승민" },
+
+   
+        {y: 45233000, label: "심상정"},
+       
+       
+        {y: 3360920,  label: "안철수"},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                   "#006633",
+     
+                  "#08A3D9",
+                "#3399CC",
+       
+      
+                ]);
+
+    var chart = new CanvasJS.Chart("09",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "19대 국회 정치자금 사용내역 - 정책 연구비"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "19대 국회 정치자금 사용내역 - 정책 연구비",
+        dataPoints: [
+        	 
+        	 
+        	       {y: 39321920, label: "심상정"},
+        	 
+          {y: 3058800,  label: "안철수"},
+           
+    {y: 1011700,  label: "유승민" },
+
+   
+    {y: 590000,  label: "문재인"},
+       
+       
+    
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                "#3399CC",
+                   "#006633",
+     
+                  "#08A3D9",
+
+       
+      
+                ]);
+
+    var chart = new CanvasJS.Chart("whowant",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "19대 국회 정치자금 사용내역 - 사회약자 후원금"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "19대 국회 정치자금 사용내역 - 사회약자 후원금",
+        dataPoints: [
+        	 
+        	 
+        	       {y: 47950000, label: "심상정"},
+  
+    {y: 29475100,  label: "문재인"},
+        	 
+          {y: 17500000,  label: "안철수"},
+           
+    {y: 2600000,  label: "유승민" },
+
+   
+  
+       
+       
+    
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
 
   <script type="text/javascript">
   $(document).ready( function () { CanvasJS.addColorSet("greenShades",
@@ -171,6 +346,55 @@ legendText: "국회 본회의 출석률",
 legendText: "대선 후보별 재산  (단위 : 천원)",
         dataPoints: [
            {y: 119690103,  label: "안철수"},
+
+         {y: 4836121,  label: "유승민" },
+        {y: 2555543,  label: "홍준표"},
+
+        {y: 1864026,  label: "문재인"},
+       {y: 350737, label: "심상정"},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                           "#08A3D9",
+                   "#CC3333",
+
+                "#3399CC",
+                "#FFCC00",
+                ]);
+
+    var chart = new CanvasJS.Chart("ananjaesan",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "안철수 제외 대선 후보별 재산 (직계존속 포함)"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "안철수 제외 대선 후보별 재산  (단위 : 천원)",
+        dataPoints: [
+         
 
          {y: 4836121,  label: "유승민" },
         {y: 2555543,  label: "홍준표"},
@@ -331,9 +555,49 @@ legendText: "대선 후보별 재산  (단위 : 천원)",
             	 <div id="bub" style="height: 300px; width: 100%;"></div>
     	<br><br><br>
 
+<!-- 법안 정리-->
 
+				
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+<img class="col-xs-12 col-sm-12 col-md-12" src="images/buban.jpg">
+
+<br>  <br>
+
+				
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+  <!-- 식대-->
+  <div class="col-xs-12 col-sm-12 col-md-12" id="sicdae" style="height: 300px; width: 100%;"></div>
+<br>  <br>
+
+				
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+  <!-- 정책연구-->
+  <div class="col-xs-12 col-sm-12 col-md-12" id="09" style="height: 300px; width: 100%;"></div>
+<br>  <br>
+
+				
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+  <!-- 후원-->
+  <div class="col-xs-12 col-sm-12 col-md-12" id="whowant" style="height: 300px; width: 100%;"></div>
+
+				
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+<br>  <br>
   <!-- 재산-->
-  <div id="jaesan" style="height: 300px; width: 100%;"></div>
+  <div class="col-xs-12 col-sm-12 col-md-12" id="jaesan" style="height: 300px; width: 100%;"></div>
+  
+				
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+  <br>  <br>
+  <!-- 안제외재산-->
+  <div class="col-xs-12 col-sm-12 col-md-12" id="ananjaesan" style="height: 300px; width: 100%;"></div>
+  
  <!-- 1차 -->
  <br><br>
  <br>
