@@ -1,0 +1,1165 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WHOVOTE</title>
+		<meta charset="utf-8" />
+		<meta name="naver-site-verification" content="40a9926ebe69b12d3c4646852353ff9af4dc94d0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/canvasjs.min.js"></script>
+
+
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "1498b343bc96f6";
+wcs_do();
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98340090-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+
+                  
+                "#FFCC00",
+                "#08A3D9",
+                 "#CC3333",
+                 "#006633",
+                "#3399CC",
+
+                ]);
+
+    var chart = new CanvasJS.Chart("bub",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "후보별 대표 발의 법안 수"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "법안 수",
+        dataPoints: [
+
+
+
+       
+        {y: 106, label: "심상정"},
+        {y: 36,  label: "유승민" },
+        {y: 25,  label: "홍준표"},
+        {y: 23,  label: "안철수"},
+        {y: 4,  label: "문재인"},
+
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                   "#006633",
+                   "#CC3333",
+                "#FFCC00",
+                "#3399CC",
+                  "#08A3D9",
+                ]);
+
+    var chart = new CanvasJS.Chart("culsuc",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "국회 본회의 출석률"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "국회 본회의 출석률",
+        dataPoints: [
+           {y: 91,  label: "안철수"},
+
+
+        {y: 87,  label: "홍준표"},
+        {y: 76, label: "심상정"},
+        {y: 74,  label: "문재인"},
+        {y: 72,  label: "유승민" },
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#3399CC",
+                  "#08A3D9",
+       
+                "#FFCC00",
+                   "#006633",
+     
+                ]);
+
+    var chart = new CanvasJS.Chart("sicdae",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "19대 국회 정치자금 사용내역 - 식대 합산"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "식대 합산 비용",
+        dataPoints: [
+        {y: 93404077,  label: "문재인"},
+           
+     {y: 71894439,  label: "유승민" },
+
+   
+        {y: 45233000, label: "심상정"},
+       
+       
+        {y: 3360920,  label: "안철수"},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                   "#006633",
+     
+                  "#08A3D9",
+                "#3399CC",
+       
+      
+                ]);
+
+    var chart = new CanvasJS.Chart("09",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "19대 국회 정치자금 사용내역 - 정책 연구비"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "정책 연구비",
+        dataPoints: [
+        	 
+        	 
+        	       {y: 39321920, label: "심상정"},
+        	 
+          {y: 3058800,  label: "안철수"},
+           
+    {y: 1011700,  label: "유승민" },
+
+   
+    {y: 590000,  label: "문재인"},
+       
+       
+    
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                "#3399CC",
+                   "#006633",
+     
+                  "#08A3D9",
+
+       
+      
+                ]);
+
+    var chart = new CanvasJS.Chart("whowant",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "19대 국회 정치자금 사용내역 - 사회약자 후원금"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "사회약자 후원금",
+        dataPoints: [
+        	 
+        	 
+        	       {y: 47950000, label: "심상정"},
+  
+    {y: 29475100,  label: "문재인"},
+        	 
+          {y: 17500000,  label: "안철수"},
+           
+    {y: 2600000,  label: "유승민" },
+
+   
+  
+       
+       
+    
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                   "#006633",
+                  "#08A3D9",
+                   "#CC3333",
+
+                "#3399CC",
+                "#FFCC00",
+                ]);
+
+    var chart = new CanvasJS.Chart("jaesan",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "대선 후보별 재산 (직계존속 포함)"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "후보별 재산",
+        dataPoints: [
+           {y: 119690103000,  label: "안철수"},
+
+         {y: 4836121000,  label: "유승민" },
+        {y: 2555543000,  label: "홍준표"},
+
+        {y: 1864026000,  label: "문재인"},
+       {y: 350737000, label: "심상정"},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                           "#08A3D9",
+                   "#CC3333",
+
+                "#3399CC",
+                "#FFCC00",
+                ]);
+
+    var chart = new CanvasJS.Chart("ananjaesan",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "안철수 제외 대선 후보별 재산 (직계존속 포함)"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "재산(NO AN)",
+        dataPoints: [
+         
+
+         {y: 4836121000,  label: "유승민" },
+        {y: 2555543000,  label: "홍준표"},
+
+        {y: 1864026000,  label: "문재인"},
+       {y: 350737000, label: "심상정"},
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+  "#006633",
+                "#3399CC",
+                
+                  "#08A3D9",
+                   "#CC3333",
+
+                ]);
+
+    var chart = new CanvasJS.Chart("0yn",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "노동, 일자리 공약평가"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "공약평가",
+        dataPoints: [
+       {y: 3.38, label: "심상정"},
+           {y: 3.0,  label: "안철수"},
+        {y: 2.77,  label: "문재인"},
+         {y: 2.83,  label: "유승민" },
+        {y: 2.46,  label: "홍준표"},
+
+      
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                 
+                   "#3399CC",
+                "#FFCC00",
+                   "#006633",
+                
+                   "#CC3333",
+               "#08A3D9",
+                ]);
+
+    var chart = new CanvasJS.Chart("0ya",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "안전 공약평가"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "공약평가",
+        dataPoints: [
+        {y: 3.4,  label: "문재인"},
+       {y: 3.37, label: "심상정"},
+           {y: 3.33,  label: "안철수"},
+        {y: 1.93,  label: "홍준표"},
+         {y: 1.73,  label: "유승민" },
+
+        
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                   "#006633",
+                                  
+                "#3399CC",
+               "#08A3D9",
+               "#CC3333",
+              
+                ]);
+
+    var chart = new CanvasJS.Chart("0yb",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "복지 공약평가"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "공약평가",
+        dataPoints: [
+       {y: 3.67, label: "심상정"},
+           {y: 3.62,  label: "안철수"},
+        {y: 3.58,  label: "문재인"},
+         {y: 3.49,  label: "유승민" },
+        {y: 2.75,  label: "홍준표"},
+
+
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                
+                "#3399CC",
+                
+                
+                   "#006633",
+                  "#08A3D9",
+                   "#CC3333",
+
+                ]);
+
+    var chart = new CanvasJS.Chart("0ye",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "교육 공약평가"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "공약평가",
+        dataPoints: [
+       {y: 3.44, label: "심상정"},
+
+        {y: 3.3,  label: "문재인"},
+           {y: 3.13,  label: "안철수"},
+
+         {y: 2.78,  label: "유승민" },
+        {y: 2.28,  label: "홍준표"},
+
+
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+  <script type="text/javascript">
+  $(document).ready( function () { CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#FFCC00",
+                  
+                
+                   "#006633",
+                 "#3399CC",
+                
+                   "#CC3333",
+  "#08A3D9",
+               
+                ]);
+
+    var chart = new CanvasJS.Chart("0yc",
+    {
+        colorSet: "greenShades",
+      title:{
+        text: "청년 공약평가"
+      },
+      animationEnabled: true,
+      axisY: {
+        title: ""
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      theme: "theme2",
+      data: [
+
+      {
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+legendText: "공약평가",
+        dataPoints: [
+       {y: 3.37, label: "심상정"},
+           {y: 3.25,  label: "안철수"},
+{y: 3.13,  label: "문재인"},
+
+        {y: 2.45,  label: "홍준표"},
+       {y: 2.23,  label: "유승민" },
+      
+       
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  });
+  </script>
+
+
+
+
+
+
+
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="container">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/vote.png" alt="" /></span><span class="title"><h1>WHOVOTE</h1>
+								</span>
+							  	</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="moon.html">문재인</a></li>
+							<li><a href="hong.html">홍준표</a></li>
+							<li><a href="an.html">안철수</a></li>
+							<li><a href="you.html">유승민</a></li>
+							<li><a href="sim.html">심상정</a></li>
+							<li><a href="#jungbo">후보자 비교</a></li>
+						</ul>
+					</nav>
+
+					<hr align="center" width="0%">
+
+	<!--	<div class="container" id="jungbo">
+						<h1>후보자 비교 - <a href="#hubo">후보별 비교로 가기</a></h1>
+								<p>항목별로 나눠진 페이지입니다.</p> -->
+								<div class="container">
+							
+								<h1>후보자 분석</h1>						<h6 style="text-align:right;"> 출처 : 국회, 언론</h6>		
+
+		<hr align="center" width="0%">
+					
+							<h4><span style="color: #357FC4; font-size: 130%;">●</span>문
+								<span style="color: #dc5356; font-size: 130%;">●</span>홍
+								<span style="color: #218A3F; font-size: 130%;">●</span>안
+								<span style="color: #66CCFF; font-size: 130%;">●</span>유
+								<span style="color: #E8D825; font-size: 130%;">●</span>심</h4>
+
+			
+						
+					<hr align="center" width="0%">
+
+
+<h3>1. 국회 내 활동</h3>
+					<hr align="center" width="0%">
+
+<div class="col-xs-12 col-sm-12 col-md-6">	
+    <!-- 출석률-->
+				<div id="culsuc" style="height: 300px; width: 100%; float: left;"></div>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-6">	
+
+	<!-- 입법발의률-->
+            	 <div id="bub" style="height: 300px; width: 100%; float: left;"></div>
+</div>
+    			<hr align="center" width="0%">
+					<hr align="center" width="0%">
+
+
+<!-- 세월호-->
+
+    <img src="images/se.jpg" class="col-xs-12 col-sm-12 col-md-6" style="float: left;" alt=""  />
+
+
+	<div class="col-xs-12 col-sm-12 col-md-12">
+	  
+	  
+	<hr align="center" width="0%">
+
+<h3>2. 재산</h3>
+					<hr align="center" width="0%">
+
+
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <!-- 재산-->
+  <div id="jaesan" style="height: 300px; width: 100%; float: left;"></div>
+</div>  
+			
+			<div class="col-xs-12 col-sm-12 col-md-6">
+
+				  <!-- 안제외재산-->
+  <div id="ananjaesan" style="height: 300px; width: 100%; float: left;"></div>
+  </div>
+  
+	</div>
+  
+
+	<div class="col-xs-12 col-sm-12 col-md-12">
+	
+	<hr align="center" width="0%">	<hr align="center" width="0%">
+	<h3>3. 정치자금 사용내역</h3>
+					<hr align="center" width="0%">
+
+	
+  <div class="col-xs-12 col-sm-12 col-md-6">
+  
+  <!-- 식대-->
+  <div id="sicdae" style="height: 300px; width: 100%; float: left;"></div>
+</div>
+					
+<div class="col-xs-12 col-sm-12 col-md-6">
+  <!-- 정책연구-->
+  <div id="09" style="height: 300px; width: 100%; float: left;"></div>
+
+</div>
+				
+</div>
+	<hr align="center" width="0%">	<hr align="center" width="0%">
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+	<hr align="center" width="0%">
+
+  <!-- 후원-->
+  <div id="whowant" style="height: 300px; width: 100%; float: left;"></div>
+
+</div>
+								
+</div>
+
+</div>
+<div class="container">
+
+	<hr align="center" width="0%">
+	<hr align="center" width="0%">
+	<h3>4. 공약 평가</h3>	<h6 style="text-align:right;"> 출처 : 경향신문X경제정의실천시민연합 <a href="http://news.khan.co.kr/kh_news/khan_art_view.html?code=910110&artid=201704280600015">[뉴스]</a> </h6>		
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+
+	<div class="col-xs-12 col-sm-12 col-md-12">
+
+
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <div id="0yn" style="height: 300px; width: 100%; float: left;"></div>
+
+  </div>
+  
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <div id="0ya" style="height: 300px; width: 100%; float: left;"></div>
+
+  </div>
+</div>
+
+	<div class="col-xs-12 col-sm-12 col-md-12">
+
+	<hr align="center" width="0%">	
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <div id="0yb" style="height: 300px; width: 100%; float: left;"></div>
+
+  </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <div id="0ye" style="height: 300px; width: 100%; float: left;"></div>
+
+  </div>
+
+	<div class="col-xs-12 col-sm-12 col-md-12">
+	<hr align="center" width="0%">
+
+<div class="col-xs-12 col-sm-12 col-md-6">
+
+  <div id="0yc" style="height: 300px; width: 100%; float: left;"></div>
+
+  </div>
+
+</div>
+					<hr align="center" width="0%">
+<br>
+			<hr align="center" width="0%">
+
+
+<h3>0. BIG DATA</h3>
+		<hr align="center" width="0%">
+
+<div class="col-xs-12 col-sm-12 col-md-6">	
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/981_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"문재인","geo":"KR","time":"now 7-d"},{"keyword":"홍준표","geo":"KR","time":"now 7-d"},{"keyword":"심상정","geo":"KR","time":"now 7-d"},{"keyword":"안철수","geo":"KR","time":"now 7-d"},{"keyword":"유승민","geo":"KR","time":"now 7-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%207-d&geo=KR&q=%EB%AC%B8%EC%9E%AC%EC%9D%B8,%ED%99%8D%EC%A4%80%ED%91%9C,%EC%8B%AC%EC%83%81%EC%A0%95,%EC%95%88%EC%B2%A0%EC%88%98,%EC%9C%A0%EC%8A%B9%EB%AF%BC","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6">	
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/981_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"문재인","geo":"KR","time":"now 7-d"},{"keyword":"홍준표","geo":"KR","time":"now 7-d"},{"keyword":"심상정","geo":"KR","time":"now 7-d"},{"keyword":"안철수","geo":"KR","time":"now 7-d"},{"keyword":"유승민","geo":"KR","time":"now 7-d"}],"category":0,"property":""}, {"exploreQuery":"date=now%207-d&geo=KR&q=%EB%AC%B8%EC%9E%AC%EC%9D%B8,%ED%99%8D%EC%A4%80%ED%91%9C,%EC%8B%AC%EC%83%81%EC%A0%95,%EC%95%88%EC%B2%A0%EC%88%98,%EC%9C%A0%EC%8A%B9%EB%AF%BC","guestPath":"https://trends.google.com:443/trends/embed/"}); </script> 
+</div>
+    			
+					<hr align="center" width="0%">
+					
+					<hr align="center" width="0%">
+
+
+	<h2>	<a href="toron.html">1차 - 5차 [토론보기]</a></h2>
+						<hr align="center" width="0%">
+	<hr align="center" width="0%">
+		
+
+
+				<!-- Main -->
+<!--
+						<div class="container" id="hubo">
+
+								<h1>후보별 비교 (Click !) - <a href="#jungbo">후보자 비교로 가기</a></h1>
+								<p>후보자 별로 포스터 클릭시 더 자세히 볼수있습니다.</p>
+	-->
+<div class="col-xs-12 col-sm-12 col-md-12">
+	<div class="container">
+		<h1>후보별 분석 (Click)</h1>
+</div></div>
+
+					<hr align="center" width="0%">
+					<hr align="center" width="0%">
+
+
+					<hr align="center" width="0%">
+`
+
+		<div class="container">
+<div class="col-xs-12 col-sm-12 col-md-12">
+  
+							<section class="tiles">
+								<span class="image">
+ 
+                
+											<a href="moon.html">		<img src="images/ms.jpg" class="col-xs-12 col-sm-12 col-md-4" style="float: left;" alt="" />				</a>
+ 					
+										
+ 									<a href="hong.html">	<img src="images/hs.jpg" class="col-xs-12 col-sm-12 col-md-4"  style="float: left;" alt="" /></a>
+									
+									
+				   
+				   
+								<a href="an.html">		<img src="images/as.jpg" class="col-xs-12 col-sm-12 col-md-4"   style="float: left;" alt="" />	</a>
+										
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12">
+
+
+					<hr align="center" width="0%">
+
+										<a href="you.html">	<img src="images/us.jpg" class="col-xs-12 col-sm-12 col-md-4"   style="float: left;" alt="" /></a>
+	
+					
+					
+									<a href="sim.html">	<img src="images/ss.jpg" class="col-xs-12 col-sm-12 col-md-4"  style="float: left;" alt="" />	</a>
+					
+</div>				
+									</span>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+					
+					<hr align="center" width="0%">
+					
+								
+							
+							<div class = "container">
+				
+						<hr align="center" width="0%">
+					  
+					<div class="panel-group">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#collapse2"><h2>누가 철학을 두려워 하는가?</h2></a>
+						      </h4>
+						    </div>
+						    <div id="collapse2" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        
+				  
+				  <h5>
+<ul>				  <br>
+				  민주주의와 자본주의를 채택한 나라에서 대통령 한 명이 모든 것을 변화시키기는 힘들다.
+민주적 의식 형성과 주체적인 사상들이 확립되어야만 비로소 변화가 일어난다.
+</ul>
+				  
+<br>
+<ul>
+누가 안보를 망치는가 변화없는 재래식 무기, 머릿수 채우기식 군대가 현대전에서 과연 의미가 있는것인가?
+이는 적폐청산과 정말 별개일까?
+		</ul>		
+				<br>	<ul>과거없이는 미래도 있을 수 없고 말은 행동을 이기지 못한다.</ul>
+				<br>	<ul>진정한 혁명이나 체제변화는 대통령 얼굴이 바뀌는 게 아니라 국민의 의식 수준의 변화에서부터 오는 것이 아닌가</ul>
+					<br><ul>민주주의에서 국민이 올바른 결정을 내리기 위해서는 왜곡되지 않은 충분한 정보가 있어야 한다.  </ul>
+					<br><ul>양자구도 : 둘 중 하나를 고르는 것이 최선일까?</ul>
+					<br><ul>정당기준으로 후보를 뽑는 우리는 문제가 없는가 ?</ul>
+					<br><ul>둘중하나의 변함없는 선택지는 악마가 자라나기 충분한 조건이다.</ul>
+					<br><ul>문제는 결국 얼굴이 바뀌는게 아니라 우리가 그동안 배워온 생각의 틀을 깨는 것이 혁명의 진정한 두 번째 발걸음이 아닌가 ?  </ul>
+		<br>			<ul>아인슈타인- 같은 일을 반복하면서 다른 결과를 기대하는 것은 미친 짓이다.  </ul>
+			<br>		<ul>잘못된일을 국가가 나서 덮는다면, 언젠가는 곪아 터지고, 국민끼리 분열되기 마련이다.  </ul>
+				<br>	<ul>  </ul>
+				
+				
+				    <ul>
+				      사드는 미국 본토방어용 <a href="http://www.vop.co.kr/A00001050834.html#cb" target="_blank">[뉴스]</a>
+				    </ul>
+				  
+				    <ul>
+				      나라 팔아먹는 외교부 장관과 국방장관 <a href= "http://news1.kr/articles/?2983084" target="_blank">[뉴스]</a>
+				      </ul>
+				  
+				   <ul>
+				      사드와 박근혜, 최순실 <a href= "http://v.media.daum.net/v/20170322085210399" target="_blank">[뉴스]</a>
+				      </ul>
+				  
+				  </h5>
+				  
+				</div>
+									  </div>
+						  </div>
+						</div>
+					</div>	
+				
+				
+		</br>							
+									
+			<!--					<a href="toron.html">	<img src="images/toron.png" class="col-xs-12 col-sm-12 col-md-7"  style="float: center;" alt="" />	</a>
+				-->					
+					
+
+
+
+
+			
+<!--
+class="img-responsive center-block"
+					<div class="container">
+					
+						<h2>후보별 대표발의법안 확인</h2>	<br>
+						<div class="panel-group">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h3 class="panel-title">
+						        <a data-toggle="collapse" href="#collapse5">후보별 대표발의법안 확인하기</a>
+						      </h3>
+						    </div>
+						    <div id="collapse5" class="panel-collapse collapse">
+						      <div class="panel-body">	</div>
+ <img class="col-xs-12 col-sm-12 col-md-12" src="images/buban.jpg">
+
+
+				</div>
+						    </div>
+						  </div>
+						</div> -->
+					</div>	
+
+</div>
+
+</div>
+
+<br>  
+
+
+				</div>
+						    </div>
+						  </div>
+						</div>
+					</div>	
+
+
+
+
+									</a>
+							
+					</section>
+
+						</div>
+					</div>	
+
+
+	 <div class="col-xs-12 col-sm-12 col-md-12">
+
+	
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+			<section>
+			  
+			</section>			
+							<section>
+								<h2>feedback</h2>
+								<ul class="icons">
+
+									<br>
+									<li><a href="https://www.facebook.com/profile.php?id=100012278222897" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							           <br>
+							           <li>카카오톡 옐로우 아이디 : WHOVOTE</li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+	
+
+
+				<!-- SUBMain -->
+<!--
+				<div class = "container">
+				
+				<h1>누가 철학을 두려워 하는가?</h1>  <h6 style="text-align:right;"> 예비선거 : 5.4-5.5 <br> 선거 : 5.9 </h6>
+				  <h4>
+			수정중	    
+				  
+				    <ul>
+				      사드는 미국 본토방어용 <a href="http://www.vop.co.kr/A00001050834.html#cb" target="_blank">뉴스</a>
+				    </ul>
+				  
+				  
+				  </h4>
+				  
+				</div>
+	-->
+
+	
